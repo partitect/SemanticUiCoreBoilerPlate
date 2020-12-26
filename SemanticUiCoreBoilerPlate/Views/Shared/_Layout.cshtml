@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     <link href="~/lib/fomantic-ui/semantic.min.css" rel="stylesheet" />
+    <link href="~/lib/vegas/vegas.min.css" rel="stylesheet" />
     <link href="~/css/main.min.css" rel="stylesheet" />
 </head>
 <body>
@@ -13,8 +14,9 @@
 
     <div class="pusher">
         <div class="ui container fluid">
-            <div class="following-menu-fix"></div>
-            @await Html.PartialAsync("Navbar")
+            <div class="following-menu-fix">
+                @await Html.PartialAsync("Navbar")
+            </div>
             @*@await Html.PartialAsync("Slider")*@
             @RenderBody()
             @await Html.PartialAsync("Footer")
@@ -22,6 +24,7 @@
     </div>
     <script src="~/lib/jquery/jquery.js"></script>
     <script src="~/lib/fomantic-ui/semantic.min.js"></script>
+    <script src="~/lib/vegas/vegas.min.js"></script>
     <script src="~/js/main.js"></script>
 </body>
 </html>

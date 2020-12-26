@@ -14,6 +14,10 @@
     {
       "library": "fomantic-ui@2.8.7",
       "destination": "wwwroot/lib/fomantic-ui/"
+    },
+    {
+      "library": "vegas@2.5.3",
+      "destination": "wwwroot/lib/vegas/"
     }
   ]
 }
