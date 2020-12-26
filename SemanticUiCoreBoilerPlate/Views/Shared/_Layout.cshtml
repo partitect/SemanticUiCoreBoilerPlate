@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/fomantic-ui/semantic.min.css" rel="stylesheet" />
+    <link href="~/css/main.min.css" rel="stylesheet" />
+</head>
+<body>
+    @await Html.PartialAsync("FixedNavbar")
+    @await Html.PartialAsync("Sidebar")
+
+    <div class="pusher">
+        <div class="ui container fluid">
+            <div class="following-menu-fix"></div>
+            @await Html.PartialAsync("Navbar")
+            @*@await Html.PartialAsync("Slider")*@
+            @RenderBody()
+            @await Html.PartialAsync("Footer")
+        </div>
+    </div>
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/fomantic-ui/semantic.min.js"></script>
+    <script src="~/js/main.js"></script>
+</body>
+</html>

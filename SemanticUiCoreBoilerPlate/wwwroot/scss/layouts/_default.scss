@@ -1,0 +1,53 @@
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: auto;
+}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap");
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	/* Font varient */
+	font-variant-ligatures: none;
+	-webkit-font-variant-ligatures: none;
+	/* Smoothing */
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased; /* Chrome, Safari */
+	-moz-osx-font-smoothing: grayscale; /* Firefox */
+	text-rendering: optimizeLegibility;
+	text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+body {
+	color: var(--font-color);
+	font-family: Roboto, sans-serif;
+	font-size: 14px;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transition: 0.25s all linear;
+	width: 100%;
+	height: 100%;
+	background: var(--bg-color);
+
+	&.pushable {
+		.pusher {
+			background: var(--bg-color);
+		}
+	}
+}
+.pusher {
+	.following-menu-fix{
+		display: none;
+		width: 100%;
+		height: 100px;
+	}
+	.page-wrapper {
+		padding: 50px 0;
+		min-height: 100px;
+		h4.ui.divider {
+			color: #fff !important;
+		}
+	}
+}
