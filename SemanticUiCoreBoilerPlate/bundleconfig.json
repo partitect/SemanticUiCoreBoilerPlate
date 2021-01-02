@@ -1,0 +1,27 @@
+[
+  {
+    "outputFileName": "wwwroot/js/main.bundle.js",
+    "inputFiles": [
+      "wwwroot/lib/jquery/jquery.js",
+      "wwwroot/lib/fomantic-ui/semantic.min.js",
+      "wwwroot/lib/vegas/vegas.min.js",
+      "wwwroot/js/main.js"
+    ],
+    "minify": {
+      "enabled": false,
+      "renameLocals": false
+    }
+  },
+  {
+    "outputFileName": "wwwroot/js/main.min.js",
+    "inputFiles": [
+      "wwwroot/js/main.bundle.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optionally generate .map file
+    "sourceMap": false
+  }
+]
